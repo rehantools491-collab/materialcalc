@@ -1,0 +1,6 @@
+# MaterialCalc.com — robots.txt
+User-agent: *
+Allow: /
+Disallow:
+
+Sitemap: https://materialcalc.com/sitemap.xml
