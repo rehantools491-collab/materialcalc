@@ -1,13 +1,13 @@
 export const SITE = {
   name: 'MaterialCalc',
-  domain: 'materialcalc.com',
-  url: 'https://materialcalc.com',
+  domain: 'thematerialcalc.com',
+  url: 'https://thematerialcalc.com',
   email: 'materialcalcsite@gmail.com',
   description: 'Free construction calculators for homeowners, DIYers, and contractors.',
   social: {
-    facebook: 'https://www.facebook.com/materialcalc',
-    instagram: 'https://www.instagram.com/materialcalc',
-    linkedin: 'https://www.linkedin.com/company/materialcalc',
+    facebook: 'https://www.facebook.com/thematerialcalc',
+    instagram: 'https://www.instagram.com/thematerialcalc',
+    linkedin: 'https://www.linkedin.com/company/thematerialcalc',
   },
 } as const;
 

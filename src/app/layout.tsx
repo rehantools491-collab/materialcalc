@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://materialcalc.com'),
+  metadataBase: new URL('https://thematerialcalc.com'),
   title: { default: 'MaterialCalc — Free Construction Calculators', template: '%s | MaterialCalc' },
   description: 'Free construction calculators for homeowners, DIYers, and contractors. Calculate concrete volume, cost, and materials instantly.',
   openGraph: {
