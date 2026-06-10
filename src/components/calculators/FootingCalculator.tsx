@@ -53,7 +53,7 @@ export default function FootingCalculator() {
 
   const copyResults = () => {
     if (!result) return;
-    const text = `Concrete Footing Results\nPer footing: ${formatNumber(result.volumePerFooting.cuYd)} yd³\nTotal (${count}): ${formatNumber(result.totalVolume.cuYd)} yd³\nWith waste: ${formatNumber(result.withWaste.cuYd)} yd³\n80 lb bags: ~${result.bags80}\nmaterialcalc.com`;
+    const text = `Concrete Footing Results\nPer footing: ${formatNumber(result.volumePerFooting.cuYd)} yd³\nTotal (${count}): ${formatNumber(result.totalVolume.cuYd)} yd³\nWith waste: ${formatNumber(result.withWaste.cuYd)} yd³\n80 lb bags: ~${result.bags80}\nthematerialcalc.com`;
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

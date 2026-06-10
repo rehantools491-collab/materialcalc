@@ -28,7 +28,7 @@ export default function ConcreteCalculator() {
 
   const copyResults = () => {
     if (!result) return;
-    const text = `Concrete Calculator Results\nVolume: ${formatNumber(result.cubicYards)} cubic yards (${formatNumber(result.cubicFeet)} cu ft / ${formatNumber(result.cubicMeters)} m³)\nWith ${waste * 100}% waste: ${formatNumber(result.withWaste.cubicYards)} cubic yards\nCalculated at materialcalc.com`;
+    const text = `Concrete Calculator Results\nVolume: ${formatNumber(result.cubicYards)} cubic yards (${formatNumber(result.cubicFeet)} cu ft / ${formatNumber(result.cubicMeters)} m³)\nWith ${waste * 100}% waste: ${formatNumber(result.withWaste.cubicYards)} cubic yards\nCalculated at thematerialcalc.com`;
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

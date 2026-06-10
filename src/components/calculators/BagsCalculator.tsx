@@ -50,7 +50,7 @@ export default function BagsCalculator() {
   const copyResults = () => {
     if (!result) return;
     const lines = result.bags.map((b) => `${b.label}: ${b.bagsNeeded} bags${b.estimatedCost != null ? ` (~${formatCurrency(b.estimatedCost)})` : ''}`);
-    const text = `Concrete Bags Calculator\nVolume: ${formatNumber(result.cubicFeet)} cu ft (${formatNumber(result.cubicYards)} yd³)\n${lines.join('\n')}\nmaterialcalc.com`;
+    const text = `Concrete Bags Calculator\nVolume: ${formatNumber(result.cubicFeet)} cu ft (${formatNumber(result.cubicYards)} yd³)\n${lines.join('\n')}\nthematerialcalc.com`;
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

@@ -38,7 +38,7 @@ export default function SlabCalculator() {
 
   const copyResults = () => {
     if (!result) return;
-    const text = `Concrete Slab Calculator Results\nVolume: ${formatNumber(result.cubicYards)} yd³\nWith ${waste * 100}% waste: ${formatNumber(result.totalWithWaste)} yd³\nArea: ${formatNumber(result.area)} sq ft\n80 lb bags: ~${result.bags80}\nmaterialcalc.com`;
+    const text = `Concrete Slab Calculator Results\nVolume: ${formatNumber(result.cubicYards)} yd³\nWith ${waste * 100}% waste: ${formatNumber(result.totalWithWaste)} yd³\nArea: ${formatNumber(result.area)} sq ft\n80 lb bags: ~${result.bags80}\nthematerialcalc.com`;
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

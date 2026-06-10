@@ -37,7 +37,7 @@ export default function CostCalculator() {
 
   const copyResults = () => {
     if (!result) return;
-    const text = `Concrete Cost Estimate\nVolume: ${formatNumber(result.cubicYardsWithWaste)} yd³\nMaterial: ${formatCurrency(result.materialCost)}\nDelivery: ${formatCurrency(result.deliveryCost)}\nLabor: ${formatCurrency(result.laborCost)}\nTotal: ${formatCurrency(result.totalCost)}\nPer sq ft: ${formatCurrency(result.costPerSqFt)}\nmaterialcalc.com`;
+    const text = `Concrete Cost Estimate\nVolume: ${formatNumber(result.cubicYardsWithWaste)} yd³\nMaterial: ${formatCurrency(result.materialCost)}\nDelivery: ${formatCurrency(result.deliveryCost)}\nLabor: ${formatCurrency(result.laborCost)}\nTotal: ${formatCurrency(result.totalCost)}\nPer sq ft: ${formatCurrency(result.costPerSqFt)}\nthematerialcalc.com`;
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

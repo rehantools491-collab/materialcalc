@@ -4,114 +4,74 @@ Free construction calculators for homeowners, DIYers, and contractors.
 
 ## Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
-- **Language:** TypeScript (strict mode)
-- **Styling:** Tailwind CSS 3.4
-- **Font:** Inter (self-hosted via next/font)
-- **Deployment:** Static export → Hostinger shared hosting (Apache)
-- **No database, no API routes, no SSR required**
+- **Next.js 15** (App Router, static export)
+- **TypeScript** (strict mode)
+- **Tailwind CSS 3.4**
+- **Inter** (self-hosted via next/font)
+- **Vercel** or any static host
 
-## Getting Started
+## Quick Start
 
 ```bash
-# Install dependencies
 npm install
-
-# Development server
-npm run dev
-
-# Production build (static export)
-npm run build
-
-# The static site outputs to ./out/
+npm run dev        # http://localhost:3000
+npm run build      # Static export to ./out/
 ```
+
+## Deploy to Vercel
+
+1. Push this repo to GitHub
+2. Go to [vercel.com](https://vercel.com), import the repo
+3. Vercel auto-detects Next.js — click Deploy
+4. Add custom domain: `thematerialcalc.com`
 
 ## Project Structure
 
 ```
-materialcalc/
-├── public/                    Static assets
-│   ├── images/               Logo, OG images
-│   ├── .htaccess             Apache config (Hostinger)
-│   ├── favicon.svg           Cube icon favicon
-│   ├── manifest.json         PWA manifest
-│   ├── robots.txt            Search engine rules
-│   └── sitemap.xml           XML sitemap (9 pages)
-│
-├── src/
-│   ├── app/                  Next.js App Router pages
-│   │   ├── layout.tsx        Root layout (header + footer)
-│   │   ├── page.tsx          Homepage / Concrete Calculator
-│   │   ├── not-found.tsx     Custom 404
-│   │   ├── concrete-slab-calculator/
-│   │   ├── concrete-cost-calculator/
-│   │   ├── concrete-footing-calculator/
-│   │   ├── concrete-bags-calculator/
-│   │   ├── about/
-│   │   ├── contact/
-│   │   ├── privacy-policy/
-│   │   └── terms-of-service/
-│   │
-│   ├── components/
-│   │   ├── calculators/      5 calculator components
-│   │   ├── layout/           Header, Footer, Breadcrumb
-│   │   ├── seo/              Schema markup generator
-│   │   └── ui/               FAQ accordion, ToolCard
-│   │
-│   ├── lib/
-│   │   ├── calculations.ts   All concrete math formulas
-│   │   └── constants.ts      Site config, tools, presets
-│   │
-│   └── styles/
-│       └── globals.css        Tailwind + component classes
-│
-├── DEPLOY.md                  Hostinger deployment guide
-└── package.json
+src/
+├── app/                          11 pages (App Router)
+│   ├── layout.tsx                Root layout + favicon metadata
+│   ├── page.tsx                  Homepage / Concrete Calculator
+│   ├── not-found.tsx             Custom 404
+│   ├── about/                    E-E-A-T optimized About page
+│   ├── contact/                  Contact form
+│   ├── concrete-slab-calculator/
+│   ├── concrete-cost-calculator/
+│   ├── concrete-footing-calculator/
+│   ├── concrete-bags-calculator/
+│   ├── privacy-policy/
+│   └── terms-of-service/
+├── components/
+│   ├── layout/                   Header, Footer, Breadcrumb
+│   ├── ui/                       Logo, FAQ, ToolCard
+│   ├── calculators/              5 calculator components
+│   ├── pages/                    ContactForm (client)
+│   └── seo/                      SchemaMarkup (JSON-LD)
+├── lib/
+│   ├── constants.ts              Site config, presets
+│   └── calculations.ts           All concrete formulas
+└── styles/
+    └── globals.css               Tailwind + components
+
+public/
+├── favicon.svg                   SVG favicon (modern browsers)
+├── favicon.ico                   ICO favicon (legacy)
+├── favicon-16x16.png
+├── favicon-32x32.png
+├── apple-touch-icon.png          iOS home screen (180×180)
+├── site.webmanifest              PWA manifest
+├── robots.txt
+├── sitemap.xml
+└── images/
+    ├── logo-icon.svg             Full-size logo (512px)
+    ├── logo-192.png              PWA icon
+    ├── logo-512.png              PWA icon
+    └── og-default.png            Open Graph image (1200×630)
 ```
-
-## Pages (11 total)
-
-| Page | URL | Description |
-|------|-----|-------------|
-| Homepage | `/` | Concrete Calculator + tool directory |
-| Slab Calculator | `/concrete-slab-calculator/` | Patios, driveways, garages |
-| Cost Calculator | `/concrete-cost-calculator/` | Materials, delivery, labor |
-| Footing Calculator | `/concrete-footing-calculator/` | Deck posts, piers, columns |
-| Bags Calculator | `/concrete-bags-calculator/` | 40/50/60/80 lb bag comparison |
-| About | `/about/` | Company info |
-| Contact | `/contact/` | Contact form |
-| Privacy Policy | `/privacy-policy/` | GDPR-friendly |
-| Terms of Service | `/terms-of-service/` | Liability disclaimers |
-| 404 | Any invalid URL | Calculator directory |
-
-## Calculators
-
-All 5 calculators include:
-- Real-time calculations with instant results
-- Waste factor toggle (0%, 5%, 10%, 15%)
-- Copy results + Reset functionality
-- Imperial/Metric unit support
-- Mobile-responsive layout
-- ARIA accessibility labels
-- Cross-links to related calculators
-
-## SEO
-
-- Unique title/description per page
-- Canonical URLs on all pages
-- Open Graph + Twitter Card tags
-- JSON-LD schema: WebSite, Organization, WebApplication, FAQPage, BreadcrumbList
-- Internal linking across all calculator pages
-- Semantic heading hierarchy (single H1 per page)
-
-## Deployment
-
-See [DEPLOY.md](./DEPLOY.md) for complete Hostinger deployment instructions.
 
 ## Brand
 
-- **Navy:** #1B365D
-- **Orange:** #E8862A
-- **Font:** Inter (400, 500, 600, 700)
-- **Domain:** materialcalc.com
+- **Navy:** `#1B365D`
+- **Orange:** `#E8862A`
+- **Founder:** Rehan Ilahi
 - **Email:** materialcalcsite@gmail.com

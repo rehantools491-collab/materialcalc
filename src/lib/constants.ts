@@ -1,9 +1,10 @@
 export const SITE = {
   name: 'MaterialCalc',
-  domain: 'materialcalc.com',
-  url: 'https://materialcalc.com',
+  domain: 'thematerialcalc.com',
+  url: 'https://thematerialcalc.com',
   email: 'materialcalcsite@gmail.com',
   description: 'Free construction calculators for homeowners, DIYers, and contractors.',
+  founder: 'Rehan Ilahi',
   social: {
     facebook: 'https://www.facebook.com/materialcalc',
     instagram: 'https://www.instagram.com/materialcalc',
@@ -11,60 +12,17 @@ export const SITE = {
   },
 } as const;
 
-export const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about/' },
-  { label: 'Contact', href: '/contact/' },
-] as const;
-
 export const CALCULATOR_TOOLS = [
-  {
-    name: 'Concrete Calculator',
-    slug: '/',
-    description: 'Calculate concrete volume for any project in cubic yards, cubic feet, and cubic meters.',
-    shortDesc: 'General volume calculator',
-    icon: 'cube',
-    color: 'orange' as const,
-  },
-  {
-    name: 'Concrete Slab Calculator',
-    slug: '/concrete-slab-calculator/',
-    description: 'Calculate exactly how much concrete you need for a patio, driveway, garage floor, or sidewalk slab.',
-    shortDesc: 'Patios, driveways, garage floors',
-    icon: 'slab',
-    color: 'blue' as const,
-  },
-  {
-    name: 'Concrete Cost Calculator',
-    slug: '/concrete-cost-calculator/',
-    description: 'Estimate your total concrete project cost including materials, delivery, and labor.',
-    shortDesc: 'Materials, delivery, labor costs',
-    icon: 'dollar',
-    color: 'green' as const,
-  },
-  {
-    name: 'Concrete Footing Calculator',
-    slug: '/concrete-footing-calculator/',
-    description: 'Calculate concrete volume for rectangular or cylindrical footings. Supports multiple footings.',
-    shortDesc: 'Deck posts, piers, columns',
-    icon: 'footing',
-    color: 'pink' as const,
-  },
-  {
-    name: 'Concrete Bags Calculator',
-    slug: '/concrete-bags-calculator/',
-    description: 'Find out how many 40, 50, 60, or 80 lb bags you need. Compare sizes and plan your purchase.',
-    shortDesc: '40, 60, 80 lb bag counts',
-    icon: 'bag',
-    color: 'purple' as const,
-  },
+  { name: 'Concrete Calculator', slug: '/', shortDesc: 'General volume calculator', color: 'orange' as const },
+  { name: 'Concrete Slab Calculator', slug: '/concrete-slab-calculator/', shortDesc: 'Patios, driveways, garage floors', color: 'blue' as const },
+  { name: 'Concrete Cost Calculator', slug: '/concrete-cost-calculator/', shortDesc: 'Materials, delivery, labor costs', color: 'green' as const },
+  { name: 'Concrete Footing Calculator', slug: '/concrete-footing-calculator/', shortDesc: 'Deck posts, piers, columns', color: 'pink' as const },
+  { name: 'Concrete Bags Calculator', slug: '/concrete-bags-calculator/', shortDesc: '40, 60, 80 lb bag counts', color: 'purple' as const },
 ] as const;
 
 export const WASTE_OPTIONS = [
-  { label: '0%', value: 0 },
-  { label: '5%', value: 0.05 },
-  { label: '10%', value: 0.10 },
-  { label: '15%', value: 0.15 },
+  { label: '0%', value: 0 }, { label: '5%', value: 0.05 },
+  { label: '10%', value: 0.10 }, { label: '15%', value: 0.15 },
 ] as const;
 
 export const SLAB_PRESETS = [
@@ -95,13 +53,6 @@ export const PRICE_PRESETS = [
   { label: 'Low ($125)', value: 125 },
   { label: 'Average ($150)', value: 150 },
   { label: 'High ($175)', value: 175 },
-] as const;
-
-export const BAG_YIELDS = [
-  { size: 40, label: '40 lb', cubicFeet: 0.30, cubicYards: 0.011 },
-  { size: 50, label: '50 lb', cubicFeet: 0.375, cubicYards: 0.014 },
-  { size: 60, label: '60 lb', cubicFeet: 0.45, cubicYards: 0.017 },
-  { size: 80, label: '80 lb', cubicFeet: 0.60, cubicYards: 0.022 },
 ] as const;
 
 export const COMMON_PROJECTS = [
