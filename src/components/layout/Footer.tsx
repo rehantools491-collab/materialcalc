@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Logo from '@/components/ui/Logo';
+
 import { SITE, CALCULATOR_TOOLS } from '@/lib/constants';
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-main">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/"><Logo variant="light" iconSize={24} /></Link>
+            <Link href="/" className="text-xl font-bold text-white">MaterialCalc</Link>
             <p className="text-sm text-white/60 mt-2 leading-relaxed">Free construction calculators for every project. Accurate, instant, and built for real builders.</p>
             <div className="flex gap-2.5 mt-4">
               {(['Facebook', 'Instagram', 'LinkedIn'] as const).map((s) => (
