@@ -64,15 +64,15 @@ const schemas = [
 const METHODOLOGY = [
   {
     title: 'Research Industry-Standard Formulas',
-    desc: 'Every calculator starts with the same math that construction professionals use daily. For concrete, that means the rectangular volume formula (Length × Width × Depth), the cylindrical formula (π × r² × h), and standard conversions between cubic feet, cubic yards, and cubic meters. We research these from published construction manuals, manufacturer documentation, and established building references — not from other calculator websites.',
+    desc: 'Every calculator starts with the same math that construction professionals use daily. For concrete, that means the rectangular volume formula (Length x Width x Depth), the cylindrical formula, and standard conversions between cubic feet, cubic yards, and cubic meters. We research these from published construction manuals, manufacturer documentation, and established building references.',
   },
   {
     title: 'Cross-Reference Against Manufacturer Data',
-    desc: 'Bag yields are sourced directly from manufacturer specifications: 0.30 cubic feet for a 40 lb bag, 0.45 for 60 lb, and 0.60 for 80 lb. Recommended slab thicknesses follow residential construction standards (4 inches for patios, 5–6 inches for driveways, 6 inches for garage floors). Every data point has a verifiable source.',
+    desc: 'Bag yields are sourced directly from manufacturer specifications: 0.30 cubic feet for a 40 lb bag, 0.45 for 60 lb, and 0.60 for 80 lb. Recommended slab thicknesses follow residential construction standards (4 inches for patios, 5 to 6 inches for driveways, 6 inches for garage floors). Every data point has a verifiable source.',
   },
   {
     title: 'Build and Test Each Calculator',
-    desc: 'After implementing the formulas, we test each calculator against hand-calculated results using known project dimensions. For example, a 10×10 ft slab at 4 inches thick must return exactly 1.23 cubic yards. We verify dozens of test cases across different dimensions, shapes, and unit systems before any calculator goes live.',
+    desc: 'After implementing the formulas, we test each calculator against hand-calculated results using known project dimensions. For example, a 10 by 10 ft slab at 4 inches thick must return exactly 1.23 cubic yards. We verify dozens of test cases across different dimensions, shapes, and unit systems before any calculator goes live.',
   },
   {
     title: 'Add Practical Features',
@@ -423,7 +423,7 @@ export default function AboutPage() {
             >
               ✉ Contact Form
             </Link>
-            <a
+            
               href={`mailto:${SITE.email}`}
               className="inline-flex items-center gap-2 px-5 py-2.5 border-[1.5px] border-gray-100 rounded-lg text-sm font-medium text-gray-600 hover:border-orange hover:text-orange hover:bg-orange-light transition-colors"
             >
@@ -431,7 +431,7 @@ export default function AboutPage() {
             </a>
           </div>
           <p className="text-sm text-gray-400 mt-4">
-            We typically respond within 24–48 business hours. You can also review
+            We typically respond within 24 to 48 business hours. You can also review
             our{' '}
             <Link href="/privacy-policy/" className="text-orange hover:underline">
               privacy policy
