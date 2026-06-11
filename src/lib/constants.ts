@@ -11,7 +11,11 @@ export const SITE = {
     linkedin: 'https://www.linkedin.com/company/materialcalc',
   },
 } as const;
-
+export const NAV_LINKS = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about/' },
+  { label: 'Contact', href: '/contact/' },
+] as const;
 export const CALCULATOR_TOOLS = [
   { name: 'Concrete Calculator', slug: '/', shortDesc: 'General volume calculator', color: 'orange' as const },
   { name: 'Concrete Slab Calculator', slug: '/concrete-slab-calculator/', shortDesc: 'Patios, driveways, garage floors', color: 'blue' as const },
