@@ -5,7 +5,7 @@ import SchemaMarkup, { organizationSchema } from '@/components/seo/SchemaMarkup'
 import { CALCULATOR_TOOLS } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'About MaterialCalc — Free Construction Calculators',
+  title: 'About MaterialCalc — Free Construction Calculators by Rehan Ilahi',
   description:
     'MaterialCalc provides free, accurate construction calculators for homeowners, DIYers, and contractors. Calculate concrete, materials, and project costs instantly.',
   alternates: { canonical: '/about/' },
@@ -117,7 +117,30 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+<section className="bg-white section-padding">
+  <div className="container-main">
+    <h2 className="heading-2 mb-4">About the Founder</h2>
 
+    <p className="text-base text-gray-600 leading-relaxed mb-4">
+      Hi, I'm Rehan Ilahi, founder of MaterialCalc.
+      I have more than 15 years of experience working with websites,
+      SEO, digital publishing, and online tools.
+    </p>
+
+    <p className="text-base text-gray-600 leading-relaxed mb-4">
+      MaterialCalc was created to provide free and accurate construction
+      calculators that help homeowners, contractors, DIY users, and
+      students estimate materials quickly and easily.
+    </p>
+
+    <p className="text-base text-gray-600 leading-relaxed">
+      Every calculator is continuously reviewed and improved to provide
+      practical results. However, users should always verify project
+      requirements with local contractors, engineers, or suppliers
+      before purchasing materials.
+    </p>
+  </div>
+</section>
       {/* CTA */}
       <section className="bg-navy py-12 text-center">
         <div className="container-main">
