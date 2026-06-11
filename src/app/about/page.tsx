@@ -423,7 +423,7 @@ export default function AboutPage() {
             >
               ✉ Contact Form
             </Link>
-            
+            <a
               href={`mailto:${SITE.email}`}
               className="inline-flex items-center gap-2 px-5 py-2.5 border-[1.5px] border-gray-100 rounded-lg text-sm font-medium text-gray-600 hover:border-orange hover:text-orange hover:bg-orange-light transition-colors"
             >
